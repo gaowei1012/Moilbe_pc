@@ -1,0 +1,428 @@
+@charset "utf-8";
+.back_c {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+}
+.client_Icon {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-position: center;
+}
+.content_icon {
+  display: block;
+  width: 80px;
+  height: 70px;
+  margin: 0 auto;
+  background-size: cover;
+}
+.active_list {
+  background: #52b6ec!important;
+  color: #fff!important;
+}
+/**
+ * header
+ */
+#header {
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  z-index: 999;
+  border-bottom: solid 1px #CCC;
+}
+.cor {
+  background: #fff!important;
+  border: none;
+}
+.active_icon {
+  background: blue !important;
+}
+.c_icon_top {
+  width: 80px;
+  height: 50px;
+  margin-top: -8px;
+}
+.c_icon_top .c_icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url(../images/logo_msg.png) no-repeat;
+}
+@media (manx-width: 340px) {
+  .col-sm-icon {
+    position: absolute;
+    right: -132px !important;
+    top: 62px;
+    display: none;
+    z-index: 999;
+    border: none;
+  }
+}
+@media (min-width: 796px) {
+  .col-ssm-icon {
+    position: absolute;
+    right: 27px!important;
+    top: 62px;
+    display: none;
+    z-index: 999;
+    border: none;
+  }
+}
+.ewm_icon {
+  position: absolute;
+  top: 62px;
+  display: none;
+  z-index: 999;
+  border: none;
+}
+.ewm_icon li {
+  list-style: none;
+}
+/**
+ * silde
+ */
+#main-slider {
+  background-image: url(../images/ppt_bg.jpg);
+  background-position: center 64px;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+  height: 831px;
+  overflow: hidden;
+  color: #fff;
+}
+#main-slider .item {
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  z-index: 1;
+  text-align: center;
+  padding-top: 90px;
+}
+#main-slider .item:first-child {
+  top: auto;
+  position: relative;
+}
+#main-slider .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 2;
+}
+#main-slider .item.active h1 {
+  -webkit-animation: scaleUp 400ms;
+  -moz-animation: scaleUp 400ms;
+  -o-animation: scaleUp 400ms;
+  -ms-animation: scaleUp 400ms;
+  animation: scaleUp 400ms;
+}
+#main-slider .prev,
+#main-slider .next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: inline-block;
+  margin-top: -50px;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 5;
+}
+#main-slider .prev:hover,
+#main-slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#main-slider .prev {
+  left: 10px;
+}
+#main-slider .next {
+  right: 10px;
+}
+#main-slider h1 {
+  font-size: 40px;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+#main-slider .title {
+  height: 178px;
+}
+#main-slider .pic {
+  height: 480px;
+}
+/***
+媒体查询
+***/
+@media (max-width: 992px) {
+  #main-slider .item .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  #main-slider {
+    height: 220px;
+    background-size: 1000px;
+  }
+  #main-slider .item {
+    padding-top: 40px;
+  }
+  #main-slider .item .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #main-slider .item .container .carousel-content .pic {
+    display: none;
+  }
+  #main-slider .item .container .carousel-content .title h1 {
+    font-size: 2.2rem;
+  }
+  #main-slider .prev,
+  #main-slider .next {
+    display: none;
+  }
+}
+/* 服务与支持 */
+.service_box {
+  margin-top: 50px;
+}
+.box_title {
+  text-align: center;
+  font-size: 30px;
+  color: #00b3fd;
+}
+.box_title h2 {
+  padding: 0 0 12px 0;
+}
+.box_title .line {
+  display: block;
+  width: 80px;
+  height: 40px;
+  border-top: 2px solid #00b3fd;
+  margin: 0 auto;
+}
+@media (min-width: 1120px) {
+  .col-md-2dot4 {
+    width: 20%!important;
+  }
+  .col-ms-pull-right {
+    float: right;
+  }
+  .col-md-pull-left {
+    float: left;
+  }
+  .col-sm-wrap {
+    width: 100%;
+    height: 50%!important;
+  }
+}
+.col-md-2dot4 {
+  text-align: center;
+  height: 300px;
+}
+.col-md-2dot4 .service_txt {
+  cursor: pointer;
+}
+.col-md-2dot4 .service_txt .icon1 {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+  background: url(../images/serve1.png) no-repeat;
+}
+.col-md-2dot4 .service_txt .icon2 {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+  background: url(../images/serve2.png) no-repeat;
+}
+.col-md-2dot4 .service_txt .icon3 {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+  background: url(../images/serve3.png) no-repeat;
+}
+.col-md-2dot4 .service_txt .icon4 {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+  background: url(../images/serve4.png) no-repeat;
+}
+.col-md-2dot4 .service_txt .icon5 {
+  display: block;
+  width: 134px;
+  height: 134px;
+  margin: 0 auto;
+  background: url(../images/serve5.png) no-repeat;
+}
+.col-md-2dot4 .service_txt h4 {
+  margin-top: 24px;
+  text-align: center;
+}
+.col-md-2dot4 .service_txt p {
+  text-align: center;
+}
+/* 产品展示 */
+.box_c {
+  background: #f1f5f8;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.product_c .product_b {
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  cursor: pointer;
+}
+.product_c .product_b img {
+  width: 100%;
+}
+.product_b .txt h4 {
+  font-size: 1.5rem;
+  margin-left: 12px;
+  text-align: left;
+}
+.product_b .txt p {
+  margin-left: 12px;
+  text-align: left;
+  font-size: 1rem;
+  color: gray;
+}
+/* 我们的客户 */
+.client_w {
+  margin: 30px 0 30px 0;
+}
+.client_wrap .client_item {
+  width: 100%;
+  height: 80px;
+  background: #f1f5f8;
+  border: solid 1px #eaeef1;
+  margin-bottom: 20px;
+}
+.client_wrap .client_item .mouer_icon1 {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-position: center;
+  background: url(../images/client2.png) no-repeat;
+}
+.client_wrap .client_item .mouer_icon2 {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-position: center;
+  background: url(../images/client7.png) no-repeat;
+}
+.client_wrap .client_item .mouer_icon3 {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-position: center;
+  background: url(../images/client6.png) no-repeat;
+}
+.client_wrap .client_item .mouer_icon4 {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-position: center;
+  background: url(../images/client5.png) no-repeat;
+}
+/* 关于我们 */
+.about_box {
+  height: 800px;
+}
+.about_c {
+  height: 640px;
+  background: url(../images/about_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.about_c .about_wrap {
+  height: 640px;
+}
+.about_c .box_title h2 {
+  padding: 0 0 12px 0;
+  color: #fff;
+}
+.about_c .box_title span {
+  display: block;
+  width: 80px;
+  height: 40px;
+  border-top: 2px solid #fff;
+  margin: 0 auto;
+}
+.about_c .about_txt {
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.box {
+  width: 100%;
+}
+.content_c {
+  height: 23%;
+  background: url(../images/content_bg.png);
+  background-position: 50% 50%;
+  background-repeat: repeat-x;
+  background-color: #626160;
+}
+.center_wrap .center {
+  margin-top: 20px;
+}
+.center_wrap .center .tlm_icon {
+  display: block;
+  width: 80px;
+  height: 70px;
+  margin: 0 auto;
+  background-size: cover;
+  background: url(../images/content_tel.png) no-repeat;
+}
+.center_wrap .center .map_icon {
+  display: block;
+  width: 80px;
+  height: 70px;
+  margin: 0 auto;
+  background-size: cover;
+  background: url(../images/content_ad.png) no-repeat;
+}
+.center_wrap .center .emila_icon {
+  display: block;
+  width: 80px;
+  height: 70px;
+  margin: 0 auto;
+  background-size: cover;
+  background: url(../images/content_em.png) no-repeat;
+}
+.center_wrap .center h4 {
+  text-align: center;
+  color: #fff;
+}
